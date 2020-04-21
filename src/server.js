@@ -1,3 +1,4 @@
+require('dotenv').config();
 const cookieParser = require("cookie-parser");
 const cookieSession = require("cookie-session");
 const express = require("express");
@@ -23,7 +24,7 @@ const app = nextApp({
 });
 
 useStaticRendering(true);
-
+console.log('process.env.IS_BUILDING_NEXTJS', process.env.IS_BUILDING_NEXTJS)
 app
   .prepare()
   .then(createHydraClientIfNecessary)

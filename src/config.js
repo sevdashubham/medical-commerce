@@ -8,14 +8,13 @@
  *   Then use `getConfig()` to get it within React components and other browser code.
  */
 const envalid = require("envalid");
-
+require('dotenv').config();
 // Config is loaded for the `next build` command, too, and we don't want to complain
 // about missing environment variables in that phase.
 if (process.env.IS_BUILDING_NEXTJS) {
   module.exports = {};
 } else {
   const { bool, num, port, str, url } = envalid;
-
   /**
    * See https://www.npmjs.com/package/envalid
    *
