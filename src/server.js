@@ -1,4 +1,5 @@
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config();
 const cookieParser = require("cookie-parser");
 const cookieSession = require("cookie-session");
 const express = require("express");

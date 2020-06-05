@@ -8,38 +8,38 @@ const ButtonStyle = styled.div`
     box-shadow: none;
     cursor: pointer;
     display: inline-block;
-    font-family: SofiaProWeb, Helvetica, Arial, sans-serif;
-    font-size: .875rem;
-    font-weight: 600;
-    height: 3.5rem;
-    line-height: 1;
-    min-width: 13.25rem;
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1em;
+line-height: 1.4em;
+    min-width: 8.25rem;
     transition-duration: 100ms;
     transition-property: background, border, box-shadow, color;
     transition-timing-function: ease;
     pointer-events: auto;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
+    color: #15253B;
+    background: #ECC2AC;
     margin: 0px;
     outline: none;
     padding: calc(1rem + 2px) 1rem calc(1rem - 2px);
-    border-width: 0.125rem;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    border-image: initial;
     text-align: center;
-
+ ${props => props.primary && `
+    background: #15253B;
+    color: white;
+  `}
 
 &:hover {
-    background: transparent;
+    background: white;
     color: rgb(0, 0, 0);
+     ${props => props.primary && `
+    background: #ECC2AC;
+    color: #15253B;
+  `}
   }
   /* The GitHub button is a primary button
    * edit this to target it specifically! */
-  ${props => props.primary && `
-    background: white;
-    color: palevioletred;
-  `}
+
 `
 
 class Button extends Component {

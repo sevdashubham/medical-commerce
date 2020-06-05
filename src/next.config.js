@@ -1,6 +1,9 @@
 const appConfig = require("./config");
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
+const withFonts = require('next-fonts');
 
-module.exports = {
+const nextConfig = {
   env: {
     CANONICAL_URL: 'http://localhost:4000',
 ENABLE_SPA_ROUTING: true,
@@ -72,3 +75,7 @@ STRIPE_PUBLIC_API_KEY:'ENTER_STRIPE_PUBLIC_KEY_HERE',
     return webpackConfig;
   }
 };
+
+module.exports = withPlugins([
+  optimizedImages,withFonts
+], nextConfig);
