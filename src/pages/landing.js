@@ -294,6 +294,177 @@ color: #15253B;
 max-width: 600px;
  `
 
+const StyledHero6 = styled.div`
+ position: relative;
+  padding: 0 100px 100px 0;
+ background: #FFFFFF;
+ `
+
+const StyledHero6Container = styled.div`
+ position: relative;
+  padding: 200px 100px 100px 100px;
+ background: #FFFFFF;
+ `
+const StyledHero6Title = styled.h1`
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: -80px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 12em;
+margin: 0;
+color: #15253B;
+ `
+
+const StyledHero6Description = styled.h5`
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1em;
+line-height: 2em;
+margin: 0;
+color: #15253B;
+max-width: 350px;
+ `
+
+const StyledHero6ProfileName = styled.h3`
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 1.2em;
+line-height: 2.5em;
+margin: 0;
+color: #15253B;
+max-width: 350px;
+ `
+
+const StyledHero6ProfileText = styled.h4`
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1em;
+line-height: 1.2em;
+margin: 0;
+color: #15253B;
+max-width: 350px;
+ `
+const StyledHero7 = styled.div`
+ position: relative;
+  padding: 100px;
+ background: #ECC2AC;
+ `
+
+const StyledHero8 = styled.div`
+ position: relative;
+  padding: 250px 0 150px 150px;
+ background: #FFFFFF;
+ `
+const StyledHero8Title = styled.h1`
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: -80px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 12em;
+margin: 0;
+color: #15253B;
+ `
+
+const StyledHero8Description = styled.h5`
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: 150px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1em;
+line-height: 2em;
+margin: 0 350px 0 0;
+color: #15253B;
+max-width: 350px;
+ `
+
+const StyledHero8Description2 = styled.h5`
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1em;
+line-height: 2em;
+margin: 20px 0 30px 0;
+color: #15253B;
+max-width: 350px;
+ `
+const StyledHero8ClientName = styled.h3`
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 1.2em;
+line-height: 4em;
+margin: 0;
+color: #15253B;
+ `
+
+const StyledHero8ClientText = styled.h4`
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: .9em;
+line-height: 2em;
+margin: 0;
+color: #15253B;
+ `
+
+const StyledTableRowLeft = styled.div`
+height: 4em;
+width: 100%;
+border: 1px solid rgba(21, 37, 59, 0.2);
+border-left: none;
+ `
+const StyledTableRowTop = styled.div`
+padding: 10px 40px;
+height: 4em;
+width: 100%;
+border: 1px solid rgba(21, 37, 59, 0.2);
+border-left: none;
+border-top: none;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1.1em;
+line-height: 1.5em;
+letter-spacing: 0.02em;
+color: #000000;
+ `
+
+const StyledTableRowRight = styled.div`
+height: 4em;
+width: 100%;
+border-bottom: 1px solid rgba(21, 37, 59, 0.2);
+padding: 10px 40px;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1.1em;
+line-height: 1.5em;
+letter-spacing: 0.02em;
+color: #000000;
+ `
+
+
 export default class Landing extends Component {
 
   render() {
@@ -411,7 +582,6 @@ export default class Landing extends Component {
         <StyledHero4>
           <StyledHero4Image src={require('../static/assets/landing/nature1@3x.png')}/>
         </StyledHero4>
-
         <StyledHero5>
           <StyledHero5Title>{'WHY'}</StyledHero5Title>
           <StyledHero5Container>
@@ -444,7 +614,201 @@ export default class Landing extends Component {
             </Grid>
           </Grid>
         </StyledHero5bar>
+        <StyledHero6>
+          <StyledHero6Title>{'EXPERTS'}</StyledHero6Title>
+          <StyledHero6Container>
+            <Grid container
+                  direction="row"
+                  justify="center"
+                  alignItems="center">
+              <Grid item xs={6} container
+                    direction="row"
+                    justify="flex-end"
+                    alignItems="center">
+                <StyledHero6Description>{'Our expert council of doctors come from some of the most renowned hospitals across India'}</StyledHero6Description>
+              </Grid>
+              <Grid item xs={6} container
+                    direction="row"
+                    justify="flex-end"
+                    alignItems="center">
+                <StyledHero5Wave src={require('../static/assets/landing/wave-blue@3x.png')}/>
+              </Grid>
+            </Grid>
+          </StyledHero6Container>
+          <Grid container
+                direction="row"
+                justify="center"
+                alignItems="center">
+            <Grid item xs={8} container
+                  direction="row"
+                  justify="flex-end"
+                  alignItems="center">
+              <Grid xs={4}>
+                <div style={{background: '#15253B', height: '20em', width: '90%'}}/>
+                <StyledHero6ProfileName>{'DR. Eli Coleman, PhD'}</StyledHero6ProfileName>
+                <StyledHero6ProfileText>{'Mauris nec neque porttito'}</StyledHero6ProfileText>
+              </Grid>
+              <Grid xs={4}>
+                <div style={{background: '#15253B', height: '20em', width: '90%'}}/>
+                <StyledHero6ProfileName>{'DR. Eli Coleman, PhD'}</StyledHero6ProfileName>
+                <StyledHero6ProfileText>{'Mauris nec neque porttito'}</StyledHero6ProfileText>
+              </Grid>
+              <Grid xs={4}>
+                <div style={{background: '#15253B', height: '20em', width: '90%'}}/>
+                <StyledHero6ProfileName>{'DR. Eli Coleman, PhD'}</StyledHero6ProfileName>
+                <StyledHero6ProfileText>{'Mauris nec neque porttito'}</StyledHero6ProfileText>
+              </Grid>
+            </Grid>
+            <Grid item xs={4}/>
+          </Grid>
+        </StyledHero6>
+        <StyledHero2WaveLower src={require('../static/assets/landing/longWaves@3x.png')}/>
 
+        <StyledHero7>
+          <Grid container
+                direction="row"
+                justify="center"
+                alignItems="center">
+            <Grid item xs={4} style={{paddingRight: 10}}>
+              <div style={{background: '#15253B', height: '50em'}}/>
+            </Grid>
+            <Grid item xs={4} style={{padding: '0 20px'}}>
+              <Grid container direction="column" justify="flex-end">
+
+                <div>
+                  <div style={{borderLeft: '1px solid #15253B', height: '20em'}}/>
+                </div>
+                <div>
+                  <StyledHero5barTitle>
+                    {'some\n' +
+                    'quote\n' +
+                    'goes\n' +
+                    'here'}
+                  </StyledHero5barTitle>
+                </div>
+              </Grid>
+            </Grid>
+            <Grid item xs={4}>
+              <Grid container
+                    direction="column">
+                <Grid item style={{paddingBottom: '1em'}}>
+                  <div style={{background: '#15253B', height: '24.5em'}}/>
+                </Grid>
+                <Grid item>
+                  <div style={{background: '#15253B', height: '24.5em'}}/>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </StyledHero7>
+
+        <StyledHero8>
+          <StyledHero8Title>{'HALF THE'}</StyledHero8Title>
+          <StyledHero8Description>{'By cutting out the middleman, we can provide you quality medication and doctor consultation, without overcharging you'}</StyledHero8Description>
+          <Grid container style={{padding: '100px 200px'}}>
+            <Grid container spacing={1}>
+              <Grid container item xs={12} spacing={3}>
+                <Grid item xs={4}>
+                <StyledTableRowTop>{'TREATMENT'}</StyledTableRowTop>
+                </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowTop>{'OTHER GUYS'}</StyledTableRowTop>
+                </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowRight>{'YO MAN'}</StyledTableRowRight>
+                </Grid>
+              </Grid>
+              <Grid container item xs={12} spacing={3}>
+                <Grid item xs={4}>
+                  <StyledTableRowTop></StyledTableRowTop>
+                </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowTop></StyledTableRowTop>
+              </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowRight></StyledTableRowRight>
+                </Grid>
+
+              </Grid>
+              <Grid container item xs={12} spacing={3}>
+                <Grid item xs={4}>
+                  <StyledTableRowTop></StyledTableRowTop>
+                </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowTop></StyledTableRowTop>
+              </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowRight></StyledTableRowRight>
+                </Grid>
+              </Grid>
+              <Grid container item xs={12} spacing={3}>
+                <Grid item xs={4}>
+                  <StyledTableRowTop></StyledTableRowTop>
+                </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowTop></StyledTableRowTop>
+              </Grid>
+                <Grid item xs={4}>
+                  <StyledTableRowRight></StyledTableRowRight>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid container>
+            <Grid item xs={6} style={{paddingRight: 70}}>
+              <Grid container direction="row">
+                <Grid item xs={6} style={{padding: '0 20px 40px 0'}}>
+                  <div style={{background: '#15253B', height: '14.5em'}}/>
+                  <StyledHero8ClientName>
+                    {'Vivek Nair'}
+                  </StyledHero8ClientName>
+                  <StyledHero8ClientText>
+                    {'Suspendisse potenti. Nulla accumsan ornare rhoncus. Nulla ligula libero, dictum ac pulvinar.'}
+                  </StyledHero8ClientText>
+                </Grid>
+                <Grid item xs={6} style={{padding: '0 20px 40px 0'}}>
+                  <div style={{background: '#15253B', height: '14.5em'}}/>
+                  <StyledHero8ClientName>
+                    {'Vivek Nair'}
+                  </StyledHero8ClientName>
+                  <StyledHero8ClientText>
+                    {'Suspendisse potenti. Nulla accumsan ornare rhoncus. Nulla ligula libero, dictum ac pulvinar.'}
+                  </StyledHero8ClientText>
+                </Grid>
+              </Grid>
+              <Grid container direction="row">
+                <Grid item xs={6} style={{paddingRight: 20}}>
+                  <div style={{background: '#15253B', height: '14.5em'}}/>
+                  <StyledHero8ClientName>
+                    {'Vivek Nair'}
+                  </StyledHero8ClientName>
+                  <StyledHero8ClientText>
+                    {'Suspendisse potenti. Nulla accumsan ornare rhoncus. Nulla ligula libero, dictum ac pulvinar.'}
+                  </StyledHero8ClientText>
+                </Grid>
+                <Grid item xs={6} style={{paddingRight: 20}}>
+                  <div style={{background: '#15253B', height: '14.5em'}}/>
+                  <StyledHero8ClientName>
+                    {'Vivek Nair'}
+                  </StyledHero8ClientName>
+                  <StyledHero8ClientText>
+                    {'Suspendisse potenti. Nulla accumsan ornare rhoncus. Nulla ligula libero, dictum ac pulvinar.'}
+                  </StyledHero8ClientText>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={6}>
+              <StyledHero5barTitle>
+                {'FROM THE HAPPY CLIENT'}
+              </StyledHero5barTitle>
+              <StyledHero8Description2>
+                {'Mauris nec neque porttitor, facilisis odio in, iaculis purus'}
+              </StyledHero8Description2>
+              <StyledHero5Wave src={require('../static/assets/landing/wave-blue@3x.png')}/>
+
+            </Grid>
+          </Grid>
+        </StyledHero8>
         <StyledHero10Topbar>
           <Grid container
                 spacing={0}
